@@ -1,0 +1,8 @@
+.users-list {
+	margin-top: 12px;
+	list-style: none;
+}
+
+.users-list li+li {
+	margin-top: 4px;
+}
