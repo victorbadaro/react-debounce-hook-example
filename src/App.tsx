@@ -1,5 +1,11 @@
+import { Container } from './layouts/Container';
+
 import './styles/global.css';
 
 export function App() {
-	return <h1>React Debounce Hook Example</h1>;
+	return (
+		<Container>
+			<h1>React Debounce Hook Example</h1>
+		</Container>
+	);
 }
