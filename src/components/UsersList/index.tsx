@@ -7,7 +7,7 @@ export function UsersList({ search, ...rest }: UsersListProps) {
 	const [users, setUsers] = useState<User[]>([]);
 
 	useEffect(() => {
-		fetch(`http://localhost:3000/users?name_like=${search}`)
+		fetch(`/users?name=${search}`)
 			.then(response => response.json())
 			.then(data => setUsers(data))
 			.catch(error => console.error(error));
