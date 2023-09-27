@@ -19,7 +19,7 @@ createServer({
 	},
 
 	routes() {
-		this.urlPrefix = 'http://localhost:5173';
+		this.urlPrefix = import.meta.env.DEV ? 'http://localhost:5173' : 'https://react-debounce-hook-example.netlify.app';
 
 		this.get('/users', (schema, request) => {
 			const { name } = request.queryParams;
